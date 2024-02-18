@@ -34,6 +34,6 @@ return {
     })
 
     -- Keymaps
-    vim.keymap.set("n", "<leader>R", ":RunCode<CR>", { noremap = true, silent = false })
+    vim.keymap.set("n", "<F5>", ":RunCode<CR>", { noremap = true, silent = false })
   end,
 }
