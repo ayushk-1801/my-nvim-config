@@ -6,6 +6,10 @@ local keymap = vim.keymap -- for conciseness
 ---------------------
 -- General Keymaps -------------------
 
+-- center cursor after scrolling
+keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Center cursor after moving up half-page" })
+keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Center cursor after moving down half-page" })
+
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
