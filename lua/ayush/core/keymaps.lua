@@ -55,7 +55,7 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 ---------------------
 -- Plugins Keymaps -------------------
 -- code-runner
-keymap.set("n", "<C-r>", ":RunCode<CR>", { noremap = true, silent = false })
+keymap.set("n", "<leader><C-r>", ":RunCode<CR>", { noremap = true, silent = false, desc = "Run Code" })
 
 -- nvim-tree
 keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" }) -- toggle file explorer
