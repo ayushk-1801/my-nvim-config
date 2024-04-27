@@ -54,6 +54,10 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 
 ---------------------
 -- Plugins Keymaps -------------------
+
+-- conform
+keymap.set("n", "<leader>fm", ":Format<CR>", { desc = "Format code" })
+
 -- code-runner
 keymap.set("n", "<leader><C-r>", ":RunCode<CR>", { noremap = true, silent = false, desc = "Run Code" })
 

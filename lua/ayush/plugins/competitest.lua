@@ -116,7 +116,7 @@ return {
 
 				companion_port = 27121,
 				receive_print_message = true,
-				template_file = "~/.config/nvim/lua/ayush/snippets/template.cpp",
+				template_file = "~/.config/nvim/lua/ayush/snippets/cp.cpp",
 				evaluate_template_modifiers = false,
 				date_format = "%c",
 				received_files_extension = "cpp",
