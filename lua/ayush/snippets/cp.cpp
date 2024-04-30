@@ -52,5 +52,8 @@ void solve() {
 
 int main() {
     fastio();
-    solve();
+    int TC = 1;
+    cin >> TC;
+    while(TC--)
+        solve();
 }

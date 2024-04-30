@@ -77,6 +77,9 @@ keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
 -- undo tree
 keymap.set("n", "<leader><S-u>", vim.cmd.UndotreeToggle)
 
+-- oil
+keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+
 -------------------------- COMPETITEST ----------------------------------
 
 local function map(mode, lhs, rhs, opts)
