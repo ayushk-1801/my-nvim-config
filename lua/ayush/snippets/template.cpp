@@ -46,6 +46,7 @@ template <class T> void _print(multiset <T> v) {cerr << "[ "; for (T i : v) {_pr
 template <class T, class V> void _print(map <T, V> v) {cerr << "[ "; for (auto i : v) {_print(i); cerr << " ";} cerr << "]";}
 
 /*--------------------------------------------------------------------------------------------------------------------------*/
+
 void solve() {
 
 }
