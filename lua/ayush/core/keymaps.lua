@@ -5,6 +5,9 @@ local keymap = vim.keymap -- for conciseness
 
 ---------------------
 -- General Keymaps -------------------
+-- switch between buffers
+keymap.set("n", "[b", ":bp<CR>", { desc = "Previous buffer" }) -- previous buffer
+keymap.set("n", "]b", ":bn<CR>", { desc = "Next buffer" }) -- next buffer
 
 -- move the selected code up or down
 keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- downward

@@ -1,6 +1,6 @@
--- return {
---     "github/copilot.vim",
--- 	opts = {},
--- }
+return {
+    "github/copilot.vim",
+	opts = {},
+}
 
-return {}
+-- return {}
