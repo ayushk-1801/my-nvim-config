@@ -16,11 +16,7 @@ using namespace std;
 #define sz(x) ((int)(x).size())
 #define all(x) (x).begin(), (x).end()
 
-#ifdef ayush_1801
 #define debug(x) cerr << #x<<" "; _print(x); cerr << endl;
-#else
-#define debug(x);
-#endif
 
 typedef long long ll;
 typedef unsigned long long ull;
