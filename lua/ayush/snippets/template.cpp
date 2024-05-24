@@ -1,5 +1,12 @@
-#include<bits/stdc++.h>
+#pragma GCC optimize("O3,unroll-loops")
+
+#include <bits/stdc++.h>
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+
 using namespace std;
+using namespace chrono;
+using namespace __gnu_pbds;
 
 #define fastio() ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
 #define MOD 1000000007
@@ -15,6 +22,9 @@ using namespace std;
 #define set_bits __builtin_popcountll
 #define sz(x) ((int)(x).size())
 #define all(x) (x).begin(), (x).end()
+#define yes cout << "YES" << nline
+#define no cout << "NO" << nline
+#define neg cout << -1 << nline
 
 #define debug(x) cerr << #x<<" "; _print(x); cerr << endl;
 
@@ -41,6 +51,10 @@ template <class T> void _print(set <T> v) {cerr << "[ "; for (T i : v) {_print(i
 template <class T> void _print(multiset <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
 template <class T, class V> void _print(map <T, V> v) {cerr << "[ "; for (auto i : v) {_print(i); cerr << " ";} cerr << "]";}
 
+/*--------------------------------------------------------------------------------------------------------------------------*/
+ll gcd(ll a, ll b) {if (b > a) {return gcd(b, a);} if (b == 0) {return a;} return gcd(b, a % b);}
+bool revsort(ll a, ll b) {return a > b;}
+vector<ll> sieve(int n) {int*arr = new int[n + 1](); vector<ll> vect; for (int i = 2; i <= n; i++)if (arr[i] == 0) {vect.push_back(i); for (int j = 2 * i; j <= n; j += i)arr[j] = 1;} return vect;}
 /*--------------------------------------------------------------------------------------------------------------------------*/
 
 void solve() {
