@@ -30,8 +30,9 @@ keymap.set("x", "<leader>p", '"_dP')
 -- make the current file executable
 keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { desc = "Make the current file executable" })
 
--- use jk to exit insert mode
+-- use jk or kj to exit insert mode
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
+keymap.set("i", "kj", "<ESC>", { desc = "Exit insert mode with kj" })
 
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
