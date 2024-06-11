@@ -54,6 +54,6 @@ return {
 		})
 
 		-- vim.cmd [[highlight NormalFloat guibg=NONE]]
-		-- vim.cmd("colorscheme tokyonight")
+		vim.cmd("colorscheme tokyonight")
 	end,
 }
