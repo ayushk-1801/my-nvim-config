@@ -22,6 +22,7 @@ using namespace __gnu_pbds;
 #define set_bits __builtin_popcountll
 #define sz(x) ((int)(x).size())
 #define all(x) (x).begin(), (x).end()
+#define rall(x) (x).rbegin(), (x).rend()
 #define yes cout << "YES" << nline
 #define no cout << "NO" << nline
 #define neg cout << -1 << nline
