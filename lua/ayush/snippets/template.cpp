@@ -23,6 +23,7 @@ using namespace __gnu_pbds;
 #define sz(x) ((int)(x).size())
 #define all(x) (x).begin(), (x).end()
 #define rall(x) (x).rbegin(), (x).rend()
+#define yn(x) cout << (x ? "YES" : "NO") << nline
 #define yes cout << "YES" << nline
 #define no cout << "NO" << nline
 #define neg cout << -1 << nline
