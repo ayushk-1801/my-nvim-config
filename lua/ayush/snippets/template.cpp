@@ -28,7 +28,11 @@ using namespace __gnu_pbds;
 #define no cout << "NO" << nline
 #define neg cout << -1 << nline
 
+#ifndef ONLINE_JUDGE
 #define debug(x) cerr << #x<<" "; _print(x); cerr << endl;
+#else
+#define debug(x)
+#endif
 
 typedef long long ll;
 typedef unsigned long long ull;
