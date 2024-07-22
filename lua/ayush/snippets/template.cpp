@@ -14,7 +14,7 @@ using namespace std;
 
 typedef long long ll;
 
-#ifndef ONLINE_JUDGE
+#ifdef LOCAL
 #include "/home/ayush/debug.h"
 #else
 #define debug(...) 42

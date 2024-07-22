@@ -22,6 +22,9 @@ return {
                     { 3, { { 1, "eo" }, { 1, "se" } } },
                 },
             },
+            compile_command = {
+                cpp = { exec = "g++", args = { "-Wall", "-DLOCAL", "$(FNAME)", "-o", "$(FNOEXT)" } },
+            },
             template_file = {
                 cpp = "~/.config/nvim/lua/ayush/snippets/template.cpp",
             },
