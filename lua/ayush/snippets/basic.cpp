@@ -14,7 +14,7 @@ using namespace std;
 
 typedef long long ll;
 
-void debug_out() { cerr << endl; }
+void debug_out() {cerr << endl;}
 string to_string(string s) {return '"' + s + '"';}
 string to_string(const char* s) {return to_string((string) s);}
 
