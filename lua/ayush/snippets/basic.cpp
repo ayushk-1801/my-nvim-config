@@ -4,7 +4,7 @@ using namespace std;
 #define fastio() ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
 #define MOD 1000000007
 #define INF 1e18
-#define nline "\n"
+#define nl "\n"
 #define pb push_back
 #define ppb pop_back
 #define mp make_pair
