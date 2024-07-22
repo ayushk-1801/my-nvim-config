@@ -23,7 +23,7 @@ return {
                 },
             },
             template_file = {
-                cpp = "~/.config/nvim/lua/ayush/snippets/template.cpp",
+                cpp = "~/.config/nvim/lua/ayush/snippets/basic.cpp",
             },
             testcases_use_single_file = true,
         })
