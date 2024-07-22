@@ -20,7 +20,7 @@ string to_string(const char* s) {return to_string((string) s);}
 
 template <typename T, typename V> string to_string(pair<T, V> p) {return "(" + to_string(p.first) + ", " + to_string(p.second) + ")";}
 template <typename T> string to_string(T v) {bool first = true; string res = "{"; for (const auto &x : v) {if (!first) {res += ", ";} first = false; res += to_string(x);} res += "}"; return res;}
-template <typename Head, typename... Tail> void debug_out(Head H, Tail... T) {cerr << " " << to_string(H);debug_out(T...);}
+template <typename Head, typename... Tail> void debug_out(Head H, Tail... T) {cerr << " " << to_string(H); debug_out(T...);}
  
 #ifndef ONLINE_JUDGE
 #define debug(...) cerr << "[" << #__VA_ARGS__ << "]:", debug_out(__VA_ARGS__)
