@@ -1,5 +1,12 @@
+-- Enable autoreload of files when changed outside of Neovim
+vim.o.autoread = true
+
+-- Automatically reload files when they change outside of Neovim
+vim.api.nvim_create_autocmd({"FocusGained", "BufEnter"}, {
+    command = "checktime"
+})
+
 vim.cmd("let g:netrw_liststyle = 3")
--- vim.cmd("colorscheme cyberdream")
 
 local opt = vim.opt -- for conciseness
 
