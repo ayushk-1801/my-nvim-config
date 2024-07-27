@@ -86,16 +86,16 @@ keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 -------------------------- COMPETITEST ----------------------------------
 
-local function map(mode, lhs, rhs, opts)
-	local options = { noremap = true, silent = true }
-	if opts then
-		options = vim.tbl_extend("force", options, opts)
-	end
-	vim.api.nvim_set_keymap(mode, lhs, rhs, options)
-end
-
-map("n", "<C-r>", ":CompetiTest run<CR>")
-map("n", "<C-t>", ":CompetiTest receive problem<CR>")
-map("n", "<C-m>", ":CompetiTest add_testcase<CR>")
+-- local function map(mode, lhs, rhs, opts)
+-- 	local options = { noremap = true, silent = true }
+-- 	if opts then
+-- 		options = vim.tbl_extend("force", options, opts)
+-- 	end
+-- 	vim.api.nvim_set_keymap(mode, lhs, rhs, options)
+-- end
+--
+-- map("n", "<C-r>", ":CompetiTest run<CR>")
+-- map("n", "<C-t>", ":CompetiTest receive problem<CR>")
+-- map("n", "<C-m>", ":CompetiTest add_testcase<CR>")
 
 -------------------------------------------------------------------------
