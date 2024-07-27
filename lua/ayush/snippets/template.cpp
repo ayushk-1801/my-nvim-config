@@ -34,4 +34,3 @@ int main() {
     while(TC--)
         solve();
 }
-
