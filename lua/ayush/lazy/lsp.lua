@@ -92,8 +92,18 @@ return {
                 { name = 'nvim_lsp' },
                 { name = 'luasnip' }, -- For luasnip users.
             }, {
-                { name = 'buffer' },
-            })
+                    { name = 'buffer' },
+                }),
+            formatting = {
+                format = require("lspkind").cmp_format {
+                    menu = {
+                        nvim_lsp = "[LSP]",
+                        path = "[PATH]",
+                        luasnip = "[SNIP]",
+                        buffer = "[buff]",
+                    },
+                },
+            },
         })
 
         vim.diagnostic.config({
