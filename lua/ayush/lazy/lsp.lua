@@ -26,7 +26,13 @@ return {
         require("mason").setup()
         require("mason-lspconfig").setup({
             ensure_installed = {
-
+                "bashls",
+                "clangd",
+                "jdtls",
+                "lua_ls",
+                "markdown_oxide",
+                "pyright",
+                "tsserver",
             },
             handlers = {
                 function(server_name) -- default handler (optional)
