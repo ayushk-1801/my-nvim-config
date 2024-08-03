@@ -65,9 +65,4 @@ vim.keymap.set("n", "<leader>fm", ":Format<CR>")
 
 vim.keymap.set("n", "<C-r>", ":RunCode<CR>", { noremap = true, silent = false})
 
-vim.keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>")
-vim.keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFileToggle<CR>")
-vim.keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>")
-vim.keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>")
-
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
