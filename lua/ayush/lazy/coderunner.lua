@@ -11,7 +11,7 @@ return {
 				java = {
 					"cd $dir &&",
 					"javac $fileName &&",
-					"java $fileName",
+					"java $fileNameWithoutExt",
 				},
 				python = "python3 -u",
 				typescript = "deno run",
